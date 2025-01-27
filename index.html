@@ -1,0 +1,787 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <title>Inter&Co</title>
+  <meta name="description" content="">
+  <meta name="keywords" content="">
+
+  <!-- Favicons -->
+  <link href="assets/img/favicon.png" rel="icon">
+  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com" rel="preconnect">
+  <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+
+  <!-- Main CSS File -->
+  <link href="assets/css/main.css" rel="stylesheet">
+
+  <!-- =======================================================
+  * Template Name: Bethany
+  * Template URL: https://bootstrapmade.com/bethany-free-onepage-bootstrap-theme/
+  * Updated: Aug 07 2024 with Bootstrap v5.3.3
+  * Author: BootstrapMade.com
+  * License: https://bootstrapmade.com/license/
+  ======================================================== -->
+</head>
+<style>
+  /* Canvas prédéfini */
+
+.canvas {
+  width: 100%;
+  max-width: 1500px; /* Largeur maximale du canvas */
+  height: 500px; /* Hauteur fixe */
+  margin: 0 auto; /* Centrage horizontal */
+  position: relative;
+  overflow: hidden; /* Cache les parties d'image qui dépassent */
+  box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.2); /* Ombre subtile */
+  background: #f0f0f0; /* Couleur de fond par défaut */
+}
+
+/* Image dans le canvas */
+.canvas-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* Assure que l'image remplit le canvas */
+  transition: transform 0.3s ease; /* Animation légère au survol */
+}
+
+/* Zoom sur l'image au survol */
+.canvas:hover .canvas-image {
+  transform: scale(1.05); /* Légère mise en valeur */
+}
+
+</style>
+<body class="index-page">
+
+  <header id="header" class="header d-flex align-items-center fixed-top">
+    <div class="header-container container-fluid container-xl position-relative d-flex align-items-center justify-content-end">
+
+      <a href="index.html" class="logo d-flex align-items-center me-auto">
+        <!-- Uncomment the line below if you also wish to use an image logo -->
+        <!-- <img src="assets/img/logo.png" alt=""> -->
+        <h1 class="sitename">Inter&Co</h1>
+      </a>
+
+      <nav id="navmenu" class="navmenu">
+        <ul>
+          <li><a href="#home" class="active">Accueil</a></li>
+          <li><a href="#athlete">Athlètes</a></li>
+          <li><a href="#federation">Fédérations</a></li>
+          <li><a href="#team">À propos</a></li>
+          <li><a href="#blog">Actualités/Blog </a></li>
+         <!--  <li class="dropdown"><a href="#"><span>Dropdown</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
+            <ul>
+              <li><a href="#">Dropdown 1</a></li>
+              <li class="dropdown"><a href="#"><span>Deep Dropdown</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
+                <ul>
+                  <li><a href="#">Deep Dropdown 1</a></li>
+                  <li><a href="#">Deep Dropdown 2</a></li>
+                  <li><a href="#">Deep Dropdown 3</a></li>
+                  <li><a href="#">Deep Dropdown 4</a></li>
+                  <li><a href="#">Deep Dropdown 5</a></li>
+                </ul>
+              </li>
+              <li><a href="#">Dropdown 2</a></li>
+              <li><a href="#">Dropdown 3</a></li>
+              <li><a href="#">Dropdown 4</a></li>
+            </ul>
+          </li> -->
+          <li><a href="#contact">Contact</a></li>
+         <a class="btn-getstarted" href="index.html#about">Espace Membre/Inscription</a>
+        </ul>
+        <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
+        
+      </nav>
+
+    </div>
+  </header>
+
+  <main class="main">
+
+    <!-- Carroussel Section -->
+    <section id="home">
+
+      <div class="w-full bg-gray-100 py-8">
+        <div class="portfolio-details-slider swiper init-swiper">
+      
+          <script type="application/json" class="swiper-config">
+            {
+              "loop": true,
+              "speed": 600,
+              "autoplay": {
+                "delay": 5000
+              },
+              "slidesPerView": 1,
+              "pagination": {
+                "el": ".swiper-pagination",
+                "type": "bullets",
+                "clickable": true
+              }
+            }
+          </script>
+      
+          <div class="swiper-wrapper align-items-center">
+      
+            <div class="swiper-slide">
+              <div class="canvas">
+                <img src="assets/img/cta-bg.jpg" alt="" class="canvas-image">
+              </div>
+            </div>
+      
+            <div class="swiper-slide">
+              <div class="canvas">
+                <img src="assets/img/hero-bg.jpg" alt="" class="canvas-image">
+              </div>
+            </div>
+      
+            <div class="swiper-slide">
+              <div class="canvas">
+                <img src="assets/img/services.jpg" alt="" class="canvas-image">
+              </div>
+            </div>
+      
+            <div class="swiper-slide">
+              <div class="canvas">
+                <img src="assets/img/cta-bg.jpg" alt="" class="canvas-image">
+              </div>
+            </div>
+      
+          </div>
+          <div class="swiper-pagination"></div>
+        </div>
+      </div>
+      
+      
+
+    </section><!-- /Carroussel Section -->
+
+    <!-- About Section -->
+   <!-- About Section -->
+   
+  
+
+<!-- Why Us Section -->
+<section id="home" class="why-us section">
+
+  <div class="container">
+
+    <div class="row gy-4">
+
+      <!-- Introduction de l'agence -->
+      <div class="col-lg-4" data-aos="fade-up" data-aos-delay="100">
+        <div class="why-box">
+          <h3>Présentation de l'agence</h3>
+          <p>
+            Inter&Co est une agence dédiée à la performance et à la gouvernance sportive. Nous collaborons avec les athlètes et les fédérations sportives pour leur fournir des solutions personnalisées qui leur permettent de relever les défis de leur secteur et de progresser vers l’excellence.Nous croyons que chaque athlète et chaque fédération mérite les meilleures stratégies et outils pour réussir.
+          </p>
+          <div class="text-center">
+            <a href="#athlete" class="more-btn"><span>Découvrir nos services</span> <i class="bi bi-chevron-right"></i></a>
+          </div>
+        </div>
+      </div><!-- Fin Introduction -->
+
+      <!-- Mission -->
+      <div class="col-lg-8 d-flex align-items-stretch">
+        <div class="row gy-4" data-aos="fade-up" data-aos-delay="200">
+
+          <div class="col-xl-6">
+            <div class="icon-box d-flex flex-column justify-content-center align-items-center">
+              <i class="bi bi-flag"></i>
+              <h4>Notre Mission</h4>
+              <p>
+                Notre mission est d’accompagner les fédérations sportives et les athlètes dans leur développement, en leur offrant des services d’audit, de conseil stratégique, et de gestion de la performance. Nous aspirons à améliorer la gouvernance sportive et à permettre à nos partenaires d’atteindre leurs objectifs avec efficacité.              </p>
+            </div>
+          </div><!-- Fin Mission -->
+
+          <!-- Valeurs -->
+          <div class="col-xl-6" data-aos="fade-up" data-aos-delay="300">
+            <div class="icon-box d-flex flex-column justify-content-center align-items-center">
+              <i class="bi bi-heart"></i>
+              <h4>Nos Valeurs</h4>
+              <p>
+                <strong>Innovation</strong> : Nous offrons des solutions novatrices et adaptées aux besoins de nos clients.<br>
+                <strong>Excellence</strong> : Nous visons l'excellence dans chaque service que nous fournissons.<br>
+                <strong>Engagement</strong> : Nous sommes dédiés au succès de nos clients, en nous impliquant pleinement dans chaque projet.
+              </p>
+            </div>
+
+          <!-- Résumé des Services -->
+          <!-- <div class="col-xl-4" data-aos="fade-up" data-aos-delay="400">
+            <div class="icon-box d-flex flex-column justify-content-center align-items-center">
+              <i class="bi bi-briefcase"></i>
+              <h4>Nos Services</h4>
+              <p>
+                Nous proposons une large gamme de services : audits organisationnels, conseils stratégiques, et réorganisation pour améliorer la gestion interne et la gouvernance des fédérations sportives.
+              </p>
+            </div>
+          </div> --><!-- Fin Résumé des Services -->
+
+
+        <!--   <section id="about" class="about section">
+
+            <div class="container">
+          
+              <div class="row gy-4">
+          
+                <div class="col-lg-6 position-relative align-self-start order-lg-last order-first" data-aos="fade-up" data-aos-delay="200">
+                  <img src="assets/img/about.jpg" class="img-fluid" alt="Présentation de l'agence">
+                </div>
+          
+                <div class="col-lg-6 content order-last order-lg-first" data-aos="fade-up" data-aos-delay="100">
+                  <h3>Présentation de l'agence</h3>
+                  <p>
+                    Bienvenue chez Inter&Co, une agence spécialisée dans la performance et la gouvernance sportive. Notre mission est de soutenir les athlètes et les fédérations sportives dans leurs efforts pour atteindre l'excellence et améliorer leur gestion interne. Nous croyons que chaque athlète et chaque fédération mérite les meilleures stratégies et outils pour réussir.
+                  </p>
+          
+                  <h4><i class="bi bi-flag"></i> Notre Mission</h4>
+                  <p>
+                    Notre mission est d’accompagner les fédérations sportives et les athlètes dans leur développement, en leur offrant des services d’audit, de conseil stratégique, et de gestion de la performance. Nous aspirons à améliorer la gouvernance sportive et à permettre à nos partenaires d’atteindre leurs objectifs avec efficacité.
+                  </p>
+          
+                  <h4><i class="bi bi-heart"></i> Nos Valeurs</h4>
+                  <p>
+                    Nous nous engageons à respecter les valeurs suivantes dans tout ce que nous entreprenons :
+                  </p>
+                  <ul>
+                    <li><i class="bi bi-check-circle"></i> <span>Innovation : Nous offrons des solutions novatrices et adaptées aux besoins de nos clients.</span></li>
+                    <li><i class="bi bi-check-circle"></i> <span>Excellence : Nous visons l'excellence dans chaque service que nous fournissons.</span></li>
+                    <li><i class="bi bi-check-circle"></i> <span>Engagement : Nous sommes dédiés au succès de nos clients, en nous impliquant pleinement dans chaque projet.</span></li>
+                  </ul>
+          
+                  <h4><i class="bi bi-briefcase"></i> Nos Services</h4>
+                  <p>
+                    Nous proposons une gamme de services dédiés aux athlètes et aux fédérations sportives, allant de l’audit des organisations à la réorganisation stratégique. Ces services seront détaillés dans les sections suivantes de cette page.
+                  </p>
+                </div>
+          
+              </div>
+          
+            </div>
+          
+          </section> --><!-- /About Section -->
+          
+
+        </div>
+      </div>
+
+    </div>
+
+  </div>
+
+</section><!-- /Why Us Section -->
+
+    <!-- Services Section -->
+    <section id="athlete" class="services section">
+
+      <!-- Section Title -->
+      <div class="container section-title" data-aos="fade-up">
+        <h2>Services pour les Athlètes</h2>
+        <p>Des services personnalisés pour aider les athlètes à maximiser leurs performances et gérer leur carrière.</p>
+      </div><!-- End Section Title -->
+    
+      <div class="container">
+    
+        <div class="row gy-4">
+    
+          <!-- Athlete Services -->
+          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="100">
+            <div class="service-item position-relative">
+              <div class="icon">
+                <i class="bi bi-activity"></i>
+              </div>
+              <a href="service-details.html" class="stretched-link">
+                <h3>Gestion de Carrière</h3>
+              </a>
+              <p>Accompagnement personnalisé pour la gestion de la carrière des athlètes, de la négociation de contrats à la gestion d'image.</p>
+            </div>
+          </div><!-- End Service Item -->
+    
+          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="200">
+            <div class="service-item position-relative">
+              <div class="icon">
+                <i class="bi bi-broadcast"></i>
+              </div>
+              <a href="service-details.html" class="stretched-link">
+                <h3>Accompagnement Sportif</h3>
+              </a>
+              <p>Suivi complet de la préparation physique et mentale, avec des experts pour maximiser les performances des athlètes.</p>
+            </div>
+          </div><!-- End Service Item -->
+    
+          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="300">
+            <div class="service-item position-relative">
+              <div class="icon">
+                <i class="bi bi-easel"></i>
+              </div>
+              <a href="service-details.html" class="stretched-link">
+                <h3>Support Marketing et Communication</h3>
+              </a>
+              <p>Stratégies de communication et de marketing pour promouvoir les athlètes et leur image, sur les réseaux sociaux et dans les médias.</p>
+            </div>
+          </div><!-- End Service Item -->
+    
+        </div>
+    
+      </div>
+    
+    </section><!-- /Athletes Services Section -->
+    
+    <section id="federation" class="services section">
+    
+      <!-- Section Title -->
+      <div class="container section-title" data-aos="fade-up">
+        <h2>Services pour les Fédérations</h2>
+        <p>Des solutions adaptées aux fédérations pour améliorer leur fonctionnement et leur gestion stratégique.</p>
+      </div><!-- End Section Title -->
+    
+      <div class="container">
+    
+        <div class="row gy-4">
+    
+          <!-- Federation Services -->
+          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="400">
+            <div class="service-item position-relative">
+              <div class="icon">
+                <i class="bi bi-bounding-box-circles"></i>
+              </div>
+              <a href="service-details.html" class="stretched-link">
+                <h3>Audit et Analyse</h3>
+              </a>
+              <p>Évaluation des structures et des processus des fédérations pour identifier des axes d'amélioration et optimiser les performances.</p>
+            </div>
+          </div><!-- End Service Item -->
+    
+          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="500">
+            <div class="service-item position-relative">
+              <div class="icon">
+                <i class="bi bi-calendar4-week"></i>
+              </div>
+              <a href="service-details.html" class="stretched-link">
+                <h3>Conseil Stratégique</h3>
+              </a>
+              <p>Assistance dans la mise en place de stratégies à long terme pour le développement et la gestion des fédérations sportives.</p>
+            </div>
+          </div><!-- End Service Item -->
+    
+          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="600">
+            <div class="service-item position-relative">
+              <div class="icon">
+                <i class="bi bi-chat-square-text"></i>
+              </div>
+              <a href="service-details.html" class="stretched-link">
+                <h3>Réorganisation et Optimisation</h3>
+              </a>
+              <p>Proposition de solutions de réorganisation interne et d'optimisation des processus pour garantir une gestion efficace des fédérations.</p>
+            </div>
+          </div><!-- End Service Item -->
+    
+        </div>
+    
+      </div>
+    
+    </section><!-- /Federations Services Section -->
+    
+    <!-- Call To Action Section -->
+<section id="call-to-action" class="call-to-action section dark-background">
+
+  <img src="assets/img/cta-bg.jpg" alt="">
+
+  <div class="container">
+
+    <div class="row" data-aos="zoom-in" data-aos-delay="100">
+      <div class="col-xl-9 text-center text-xl-start">
+        <h3>Agissez maintenant</h3>
+        <p>Rejoignez-nous pour transformer la performance de votre fédération ou athlète. Notre équipe est prête à vous accompagner dans cette aventure vers l'excellence sportive.</p>
+      </div>
+      <div class="col-xl-3 cta-btn-container text-center">
+        <a class="cta-btn align-middle" href="#contact">Contactez-nous</a>
+      </div>
+    </div>
+
+  </div>
+
+</section>
+    
+    <!-- Testimonials Section -->
+    <section id="testimonials" class="testimonials section light-background">
+
+      <div class="container" data-aos="fade-up" data-aos-delay="100">
+
+        <div class="swiper init-swiper">
+          <script type="application/json" class="swiper-config">
+            {
+              "loop": true,
+              "speed": 600,
+              "autoplay": {
+                "delay": 5000
+              },
+              "slidesPerView": "auto",
+              "pagination": {
+                "el": ".swiper-pagination",
+                "type": "bullets",
+                "clickable": true
+              }
+            }
+          </script>
+          <div class="swiper-wrapper">
+
+            <div class="swiper-slide">
+  <div class="testimonial-item">
+    <div class="row gy-4 justify-content-center">
+      <div class="col-lg-6">
+        <div class="testimonial-content">
+          <p>
+            <i class="bi bi-quote quote-icon-left"></i>
+            <span>Grâce à Inter&Co, nous avons pu redéfinir notre stratégie sportive et atteindre nos objectifs. Leur expertise en gouvernance sportive est incomparable.</span>
+            <i class="bi bi-quote quote-icon-right"></i>
+          </p>
+          <h3>Alexandre Dupont</h3>
+          <h4>Directeur Technique, Fédération de Football</h4>
+          <div class="stars">
+            <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-2 text-center">
+        <img src="assets/img/testimonials/testimonials-1.jpg" class="img-fluid testimonial-img" alt="Alexandre Dupont">
+      </div>
+    </div>
+  </div>
+</div><!-- End testimonial item -->
+
+<div class="swiper-slide">
+  <div class="testimonial-item">
+    <div class="row gy-4 justify-content-center">
+      <div class="col-lg-6">
+        <div class="testimonial-content">
+          <p>
+            <i class="bi bi-quote quote-icon-left"></i>
+            <span>Collaborer avec Inter&Co a été une expérience incroyable. Leur approche personnalisée et leur compréhension de nos besoins ont fait toute la différence.</span>
+            <i class="bi bi-quote quote-icon-right"></i>
+          </p>
+          <h3>Marie Leclerc</h3>
+          <h4>Responsable des Partenariats, Ligue de Basketball</h4>
+          <div class="stars">
+            <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-2 text-center">
+        <img src="assets/img/testimonials/testimonials-2.jpg" class="img-fluid testimonial-img" alt="Marie Leclerc">
+      </div>
+    </div>
+  </div>
+</div><!-- End testimonial item -->
+
+<div class="swiper-slide">
+  <div class="testimonial-item">
+    <div class="row gy-4 justify-content-center">
+      <div class="col-lg-6">
+        <div class="testimonial-content">
+          <p>
+            <i class="bi bi-quote quote-icon-left"></i>
+            <span>L'accompagnement d'Inter&Co nous a permis de structurer nos équipes et d'améliorer considérablement nos performances. Leur soutien est précieux.</span>
+            <i class="bi bi-quote quote-icon-right"></i>
+          </p>
+          <h3>Luc Martin</h3>
+          <h4>Coach, Équipe Nationale de Handball</h4>
+          <div class="stars">
+            <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-2 text-center">
+        <img src="assets/img/testimonials/testimonials-3.jpg" class="img-fluid testimonial-img" alt="Luc Martin">
+      </div>
+    </div>
+  </div>
+</div><!-- End testimonial item -->
+
+<div class="swiper-slide">
+  <div class="testimonial-item">
+    <div class="row gy-4 justify-content-center">
+      <div class="col-lg-6">
+        <div class="testimonial-content">
+          <p>
+            <i class="bi bi-quote quote-icon-left"></i>
+            <span>En travaillant avec Inter&Co, nous avons pu mettre en place des processus clairs et efficaces qui ont transformé notre fédération.</span>
+            <i class="bi bi-quote quote-icon-right"></i>
+          </p>
+          <h3>Clara Rousseau</h3>
+          <h4>Présidente, Fédération de Natation</h4>
+          <div class="stars">
+            <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-2 text-center">
+        <img src="assets/img/testimonials/testimonials-4.jpg" class="img-fluid testimonial-img" alt="Clara Rousseau">
+      </div>
+    </div>
+  </div>
+</div><!-- End testimonial item -->
+
+          </div>
+          <div class="swiper-pagination"></div>
+        </div>
+
+      </div>
+
+    </section><!-- /Testimonials Section -->
+
+    <!-- Team Section -->
+<section id="team" class="team section">
+
+  <!-- Section Title -->
+  <div class="container section-title" data-aos="fade-up">
+    <h2>Présentation de notre équipe</h2>
+    <p>Découvrez les experts passionnés derrière le succès d'Inter&Co, dédiés à offrir les meilleures solutions en gouvernance et performance sportive.</p>
+  </div><!-- End Section Title -->
+
+  <div class="container">
+
+    <div class="row gy-4">
+
+      <div class="col-xl-3 col-md-6 d-flex" data-aos="fade-up" data-aos-delay="100">
+        <div class="member">
+          <img src="assets/img/team/team-1.jpg" class="img-fluid" alt="">
+          <h4>Élodie Durand</h4>
+          <span>Consultante en Gouvernance Sportive</span>
+<!--           <p>Avec plus de 10 ans d'expérience, Élodie accompagne les fédérations sportives dans la mise en place de stratégies efficaces et durables.</p>
+ -->          <div class="social">
+            <a href=""><i class="bi bi-linkedin"></i></a>
+            <a href=""><i class="bi bi-facebook"></i></a>
+            <a href=""><i class="bi bi-instagram"></i></a>
+            <a href=""><i class="bi bi-twitter-x"></i></a>
+          </div>
+        </div>
+      </div><!-- End Team Member -->
+
+      <div class="col-xl-3 col-md-6 d-flex" data-aos="fade-up" data-aos-delay="200">
+        <div class="member">
+          <img src="assets/img/team/team-2.jpg" class="img-fluid" alt="">
+          <h4>Lucas Bernard</h4>
+          <span>Responsable Marketing et Communication</span>
+<!--           <p>Lucas est spécialisé dans la création de campagnes innovantes qui renforcent la visibilité des athlètes et des organisations sportives.</p>
+ -->          <div class="social">
+            <a href=""><i class="bi bi-linkedin"></i></a>
+            <a href=""><i class="bi bi-facebook"></i></a>
+            <a href=""><i class="bi bi-instagram"></i></a>
+            <a href=""><i class="bi bi-twitter-x"></i></a>
+          </div>
+        </div>
+      </div><!-- End Team Member -->
+
+      <div class="col-xl-3 col-md-6 d-flex" data-aos="fade-up" data-aos-delay="300">
+        <div class="member">
+          <img src="assets/img/team/team-3.jpg" class="img-fluid" alt="">
+          <h4>Claire Martin</h4>
+          <span>Analyste de Performance Sportive</span>
+          <!-- <p>Claire utilise des données avancées pour optimiser la préparation et les résultats des équipes et des athlètes.</p> -->
+          <div class="social">
+            <a href=""><i class="bi bi-linkedin"></i></a>
+            <a href=""><i class="bi bi-facebook"></i></a>
+            <a href=""><i class="bi bi-instagram"></i></a>
+            <a href=""><i class="bi bi-twitter-x"></i></a>
+          </div>
+        </div>
+      </div><!-- End Team Member -->
+
+      <div class="col-xl-3 col-md-6 d-flex" data-aos="fade-up" data-aos-delay="400">
+        <div class="member">
+          <img src="assets/img/team/team-4.jpg" class="img-fluid" alt="">
+          <h4>Maxime Lefèvre</h4>
+          <span>Directeur Financier</span>
+         <!--  <p>Maxime gère les budgets et les plans financiers pour assurer la viabilité des projets de nos clients.</p> -->
+          <div class="social">
+            <a href=""><i class="bi bi-linkedin"></i></a>
+            <a href=""><i class="bi bi-facebook"></i></a>
+            <a href=""><i class="bi bi-instagram"></i></a>
+            <a href=""><i class="bi bi-twitter-x"></i></a>
+          </div>
+        </div>
+      </div><!-- End Team Member -->
+
+    </div>
+
+  </div>
+
+</section><!-- /Team Section -->
+
+   <!-- Section Contact -->
+<section id="contact" class="contact section">
+
+  <!-- Titre de la Section -->
+  <div class="container section-title" data-aos="fade-up">
+    <h2>Contact</h2>
+   <!--  <p>Nous sommes à votre disposition pour répondre à toutes vos questions et besoins.</p> -->
+  </div><!-- Fin Titre de la Section -->
+
+  <div class="container" data-aos="fade-up" data-aos-delay="100">
+
+    <div class="row gy-4">
+
+      <div class="col-lg-5">
+
+        <div class="info-wrap">
+          <div class="info-item d-flex" data-aos="fade-up" data-aos-delay="200">
+            <i class="bi bi-geo-alt flex-shrink-0"></i>
+            <div>
+              <h3>Adresse</h3>
+              <p>A108 Rue Adam, New York, NY 535022</p>
+            </div>
+          </div><!-- Fin Élément Info -->
+
+          <div class="info-item d-flex" data-aos="fade-up" data-aos-delay="300">
+            <i class="bi bi-telephone flex-shrink-0"></i>
+            <div>
+              <h3>Téléphone</h3>
+              <p>+1 5589 55488 55</p>
+            </div>
+          </div><!-- Fin Élément Info -->
+
+          <div class="info-item d-flex" data-aos="fade-up" data-aos-delay="400">
+            <i class="bi bi-envelope flex-shrink-0"></i>
+            <div>
+              <h3>Email</h3>
+              <p>info@example.com</p>
+            </div>
+          </div><!-- Fin Élément Info -->
+
+          <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d48389.78314118045!2d-74.006138!3d40.710059!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c25a22a3bda30d%3A0xb89d1fe6bc499443!2sDowntown%20Conference%20Center!5e0!3m2!1sen!2sus!4v1676961268712!5m2!1sen!2sus" frameborder="0" style="border:0; width: 100%; height: 270px;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+      </div>
+
+      <div class="col-lg-7">
+        <form action="forms/contact.php" method="post" class="php-email-form" data-aos="fade-up" data-aos-delay="200">
+          <div class="row gy-4">
+
+            <div class="col-md-6">
+              <label for="name-field" class="pb-2">Votre Nom</label>
+              <input type="text" name="name" id="name-field" class="form-control" required="">
+            </div>
+
+            <div class="col-md-6">
+              <label for="email-field" class="pb-2">Votre Email</label>
+              <input type="email" class="form-control" name="email" id="email-field" required="">
+            </div>
+
+            <div class="col-md-12">
+              <label for="subject-field" class="pb-2">Objet</label>
+              <input type="text" class="form-control" name="subject" id="subject-field" required="">
+            </div>
+
+            <div class="col-md-12">
+              <label for="message-field" class="pb-2">Message</label>
+              <textarea class="form-control" name="message" rows="10" id="message-field" required=""></textarea>
+            </div>
+
+            <div class="col-md-12 text-center">
+              <div class="loading">Chargement</div>
+              <div class="error-message"></div>
+              <div class="sent-message">Votre message a été envoyé. Merci !</div>
+
+              <button type="submit">Envoyer votre message</button>
+            </div>
+
+          </div>
+        </form>
+      </div><!-- Fin Formulaire de Contact -->
+
+    </div>
+
+  </div>
+
+</section><!-- Fin Section Contact -->
+
+  </main>
+
+  <footer id="footer" class="footer light-background">
+
+    <div class="container footer-top">
+      <div class="row gy-4">
+        <div class="col-lg-6 col-md-12 footer-about">
+          <a href="index.html" class="logo d-flex align-items-center">
+            <span class="sitename">Inter&Co</span>
+          </a>
+          <p>Nous nous engageons à offrir des solutions de performance et de gouvernance sportive aux athlètes et fédérations, en garantissant une approche professionnelle et stratégique pour chaque projet.</p>
+          <div class="social-links d-flex mt-4">
+            <a href=""><i class="bi bi-twitter"></i></a>
+            <a href=""><i class="bi bi-facebook"></i></a>
+            <a href=""><i class="bi bi-instagram"></i></a>
+            <a href=""><i class="bi bi-linkedin"></i></a>
+          </div>
+        </div>
+  
+        <div class="col-lg-3 col-6 footer-links">
+          <h4>Liens Utiles</h4>
+          <ul>
+            <li><a href="#home">Accueil</a></li>
+            <li><a href="#athlete">Athlètes</a></li>
+            <li><a href="#federation">Fédérations</a></li>
+            <li><a href="#team">À propos</a></li>
+            <li><a href="#blog">Actualités/Blog</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </div>
+  
+        <!-- <div class="col-lg-2 col-6 footer-links">
+          <h4>Nos Services</h4>
+          <ul>
+            <li><a href="#">Gestion de Carrière</a></li>
+            <li><a href="#">Accompagnement Sportif</a></li>
+            <li><a href="#">Consulting Fédérations</a></li>
+            <li><a href="#">Audit Stratégique</a></li>
+            <li><a href="#">Réorganisation</a></li>
+          </ul>
+        </div> -->
+  
+        <div class="col-lg-3 col-md-12 footer-contact text-center text-md-start">
+          <h4>Contactez-Nous</h4>
+          <p>123, Rue des Sports</p>
+          <p>Paris, 75001</p>
+          <p>France</p>
+          <p class="mt-4"><strong>Téléphone:</strong> <span>+33 1 23 45 67 89</span></p>
+          <p><strong>Email:</strong> <span>contact@interco.com</span></p>
+        </div>
+  
+      </div>
+    </div>
+  
+  </footer>
+  
+
+  <!-- Scroll Top -->
+  <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+
+  <!-- Preloader -->
+  <div id="preloader"></div>
+
+  <!-- Vendor JS Files -->
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/vendor/php-email-form/validate.js"></script>
+  <script src="assets/vendor/aos/aos.js"></script>
+  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+  <script src="assets/vendor/purecounter/purecounter_vanilla.js"></script>
+  <script src="assets/vendor/imagesloaded/imagesloaded.pkgd.min.js"></script>
+  <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+
+  <!-- Main JS File -->
+  <script src="assets/js/main.js"></script>
+
+</body>
+
+</html>
